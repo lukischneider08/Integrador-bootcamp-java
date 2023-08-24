@@ -1,79 +1,194 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Actividades</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
-
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/proyecto.style.css" />
+    <link rel="stylesheet" href="../css/global.style.css">
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg text-primary-emphasis bg-danger">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html ">
+                    <img src="../assets/logo.jpg" width="80" height="80" class="m-2 rounded-circle border border-white" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">QUIENES SOMOS</a>
+                        </li>
+                        <li class="nav-item">
 
-<header>
-        
-    <nav class="navbar navbar-expand-lg  text-primary-emphasis bg-primary-subtle ">
-        <div class="container-fluid  ">
-            <a class="navbar-brand" href="../index.html ">
-                <img src="/assets/logo.jpg" width="80" height="80" class="m-2 rounded-circle">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">QUIENES SOMOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="./proyecto.html">PROYECTO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="./actividades.html">ACTIVIDADES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./colaborar.html">COLABORAR</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./inscripciones.html">INSCRIPCIONES</a>
-                    </li>
+                            <a class="nav-link " href="./proyecto.html">PROYECTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./actividades.html">ACTIVIDADES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./colaborar.html">COLABORAR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./inscripciones.html">INSCRIPCIONES</a>
+                        </li>
 
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard-heart-fill m-1" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"/>
-                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm4 5.982c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
-                      </svg>
-                </ul>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-clipboard-heart-fill m-1" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z" />
+                            <path fill-rule="evenodd"
+                                d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm4 5.982c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z" />
+                        </svg>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-</header>
+    <main class="p-2 colormain">
+        <section class="cont">
+            <div class="centered">
+                <h2>Nuestra Misi&oacute;n</h2>
+                <p class="text-primary-emphasis bg-primary-subtle p-2 rounded">
+                    promover el desarrollo integral de los niños, niñas y adolescentes a
+                    trav&eacute;s de la educaci&oacute;n donde trabajamos.
+                </p>
+            </div>
+        </section>
 
-<main>
+        <br />
 
-</main>
+        <section class="mainindex">
+            <h2 class="text-center">Nuestros valores</h2>
+            <div class="d-flex flex-row flex-md-row flex-wrap justify-content-center m-5">
+                <div class="bg-primary-subtle p-1 rounded m-3 col-12 col-md-6 col-lg-4">
+                    <h5 class="bg-success rounded-top text-white text-center p-1">
+                        Educaci&oacute;n
+                    </h5>
+                    <p class="text-center">
+                        Es la herramienta que permite a las personas, alcanzar su
+                        m&aacute;ximo potencial.
+                    </p>
+                </div>
+                <div class="bg-primary-subtle p-1 rounded m-3 col-12 col-md-6 col-lg-4">
+                    <h5 class="bg-success rounded text-white text-center p-1">
+                        Excelencia
+                    </h5>
+                    <p class="text-center">
+                        Emprendemos nuestros proyectos con este principio como base,
+                        ofreciendo actividades de calidad. Ellos merecen más que algo
+                        bueno, merecen lo mejor.
+                    </p>
+                </div>
 
+                <div class="bg-primary-subtle p-1 rounded m-3 col-12 col-md-6 col-lg-4">
+                    <h5 class="bg-success rounded-top text-white text-center p-1">
+                        Transparencia
+                    </h5>
+                    <p class="text-center">
+                        Ponemos a disposición de nuestros colaboradores toda la
+                        información necesaria sobre los recursos utilizados en nuestros
+                        proyectos.
+                    </p>
+                </div>
 
+                <div class="bg-primary-subtle p-1 rounded m-3 col-12 col-md-6 col-lg-4">
+                    <h5 class="bg-success rounded-top text-white text-center p-1">
+                        Empat&iacute;a
+                    </h5>
+                    <p class="text-center">
+                        Cada persona es única y merece la mirada apreciativa que los hace
+                        dignos como seres humanos. Nuestro equipo interdisciplinario
+                        atiende las necesidades, tanto emocionales, físicas, cognitivas.
+                    </p>
+                </div>
 
-<footer>
+                <div class="bg-primary-subtle p-1 rounded m-3 col-12 col-md-6 col-lg-4">
+                    <h5 class="bg-success rounded-top text-white text-center p-1">
+                        Equidad
+                    </h5>
+                    <p class="text-center">
+                        Todos tienen el derecho de que se les garanticen los accesos para
+                        satisfacer sus necesidades básicas.
+                    </p>
+                </div>
 
-</footer>
+                <div class="bg-primary-subtle p-1 rounded m-3 col-12 col-md-6 col-lg-4">
+                    <h5 class="bg-success rounded-top text-white text-center p-1">
+                        Profesionalismo
+                    </h5>
+                    <p class="text-center">
+                        Contamos con un equipo de trabajo interdisciplinario que aborda
+                        todas las problemáticas desde diferentes enfoques para cumplir con
+                        nuestra misión.
+                    </p>
+                </div>
 
+                <div class="bg-primary-subtle p-1 rounded m-3 col-12 col-md-6 col-lg-4">
+                    <h5 class="bg-success rounded-top text-white text-center p-1">
+                        Desarrollo integral
+                    </h5>
+                    <p class="text-center">
+                        Trabajamos para promover y proveer las oportunidades necesarias
+                        para garantizar el crecimiento, el conocimiento y el compañerismo
+                        de todos.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <footer>
+        <section class="d-flex flex-column flex-md-row align-items-center justify-content-around colorfooter p-3">
+            <section class="bg-primary-subtle p-5 shadow rounded col-10 col-md-4 col-lg-3">
+                <div>
+                    <h3 class="">Escr&iacute;benos!</h3>
+                    <ul>
+                        <li>Av. Belisario Roldán 4651</li>
+                        <li>Provincia de Buenos Aires</li>
+                        <li>Tel. (54)5277 0815</li>
+                        <li>info@proyectogc.org</li>
+                    </ul>
 
+                    <img src="../assets/logo.jpg" width="80" height="80" class="m-2" />
+                </div>
+            </section>
 
+            <form class="my-4 p-2 shadow rounded bg-primary-subtle col-11 col-md-6 col-lg-4">
+                <div class="">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nombre" />
+                </div>
 
+                <div class="">
+                    <label for="exampleFormControlInput1" class="form-label">Correo electronico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com" />
+                </div>
 
+                <div class="">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <p>Contanos en que podemos ayudarte. 200 caracteres</p>
+                </div>
 
+                <button type="submit" class="mt-2 btn btn-primary">Enviar</button>
+            </form>
+        </section>
+    </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

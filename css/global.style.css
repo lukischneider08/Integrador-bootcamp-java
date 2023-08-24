@@ -1,0 +1,25 @@
+.bg-success{
+    background-color: #11B65E !important
+}
+
+.bg-danger{
+    background-image: linear-gradient(#30a3e6, rgb(164, 191, 204)) !important; 
+}
+
+.colormain{
+    background-image: linear-gradient(rgb(164, 191, 204),rgb(164, 191, 204));
+
+}
+.colorfooter{
+    background-image: linear-gradient(rgb(164, 191, 204), #30a3e6);
+
+}
+
+
+
+a:hover{
+    background-color: rgb(191, 191, 233);
+    border-radius: 10px;
+    text-decoration: overline;
+}
+
