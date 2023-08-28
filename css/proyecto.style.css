@@ -1,0 +1,86 @@
+.imgProyecto{
+    background-image: url(../assets/imgproyecto2.png);
+    height: 70vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center
+}
+
+@media (min-width: 768px) {
+
+    .videoProyecto{
+        width:650px;
+        height:480px
+    }
+
+    .imgProyecto{
+    background-image: url(../assets/imgproyecto.png);
+    height: 340px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top
+    } 
+}
+
+
+
+
+@media (min-width: 800px) {
+
+    .imgProyecto{
+    background-image: url(../assets/sloganproyecto.png);
+    height: 150px;
+    background-size: cover;
+    }
+
+}
+
+@media (min-width: 971px) {
+
+    .imgProyecto{
+    background-image: url(../assets/sloganproyecto.png);
+    height: 180px;
+    background-size: cover;
+    }
+
+}
+@media (min-width: 1043px) {
+
+    .imgProyecto{
+    background-image: url(../assets/sloganproyecto.png);
+    height: 210px;
+    background-size: cover;
+    }
+
+}
+@media (min-width: 1440px) {
+
+    .imgProyecto{
+    background-image: url(../assets/sloganproyecto.png);
+    height: 250px;
+    background-size: cover;
+    }
+
+}
+
+@media (min-width: 1920px) {
+
+    .imgProyecto{
+    background-image: url(../assets/sloganproyecto.png);
+    height: 300px;
+    background-size: cover;
+    }
+
+}
+
+
+main{
+    font-family:var(--font-primary);
+    font-weight: 400 !important;
+}
+
+
+.bg-warning{
+
+    background-color: rgb(146, 197, 197) !important;
+}

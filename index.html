@@ -66,7 +66,7 @@
                 >
               </li>
 
-              <svg
+              <svg onclick="corazon()" class="corazon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
                 height="25"
@@ -74,7 +74,7 @@
                 class="bi bi-clipboard-heart-fill m-1"
                 viewBox="0 0 16 16"
               >
-                <path class="caca"
+                <path 
                   fill-rule="evenodd"
                   d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"
                 />
@@ -88,13 +88,13 @@
         </div>
       </nav>
     </header>
-
+    
     <main class="p-2 colormain">
       <section class="cont " >
         <div class="centered">
-          <h2>Nuestra Misi&oacute;n</h2>
+          <h2 class="bg-success">Fundaci&oacute;n Regalos</h2>
           <p class="text-primary-emphasis bg-primary-subtle p-2 rounded">
-            promover el desarrollo integral de los niños, niñas y adolescentes a
+            Queremos promover el desarrollo integral de los niños, niñas y adolescentes a
             trav&eacute;s de la educaci&oacute;n donde trabajamos.
           </p>
         </div>
@@ -203,7 +203,7 @@
         class="d-flex flex-column flex-md-row align-items-center justify-content-around colorfooter p-3"
       >
         
-        <section class="bg-primary-subtle p-5 shadow rounded col-10 col-md-4 col-lg-3">
+        <section class="bg-primary-subtle p-3 shadow rounded col-10 col-md-4 col-lg-3">
           <div><h3 class="">Escr&iacute;benos!</h3>
             <ul>
               <li>Av. Belisario Roldán 4651</li>
@@ -216,7 +216,7 @@
           </div>
         </section>
 
-        <form class="  my-4 p-2 shadow rounded bg-primary-subtle col-11 col-md-6 col-lg-4">
+        <form class=" p-2 shadow rounded bg-primary-subtle col-11 col-md-6 col-lg-4">
           <div class="">
             <label for="exampleFormControlInput1" class="form-label"
               >Nombre</label
@@ -253,7 +253,7 @@
             <p>Contanos en que podemos ayudarte. 200 caracteres</p>
           </div>
 
-          <button type="submit" class="mt-2 btn btn-primary">Enviar</button>
+          <button type="submit" class=" btn btn-primary">Enviar</button>
         </form>
       </section>
     </footer>
@@ -263,5 +263,7 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>
