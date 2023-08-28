@@ -7,7 +7,7 @@
     <title>Colaborar</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../css/proyecto.style.css" />
+    <link rel="stylesheet" href="../css/colaborar.style.css" />
     <link rel="stylesheet" href="../css/global.style.css">
 </head>
 
@@ -16,7 +16,8 @@
         <nav class="navbar navbar-expand-lg text-primary-emphasis bg-danger">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html ">
-                    <img src="../assets/logo.jpg" width="80" height="80" class="m-2 rounded-circle border border-white" />
+                    <img src="../assets/logo.jpg" width="80" height="80"
+                        class="m-2 rounded-circle border border-white" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,96 +55,80 @@
         </nav>
     </header>
 
-    <main class="p-2 colormain">
-        <section class="cont">
-            <div class="centered">
-                <h2>Nuestra Misi&oacute;n</h2>
-                <p class="text-primary-emphasis bg-primary-subtle p-2 rounded">
-                    promover el desarrollo integral de los niños, niñas y adolescentes a
-                    trav&eacute;s de la educaci&oacute;n donde trabajamos.
-                </p>
-            </div>
+    <main class="p-2 colormain d-flex flex-md-column align-items-center">
+
+        
+        <section class="d-flex text-center justify-content-center rounded bg-warning w-75 p-2">
+            <form  class=" was-validated col-md-7">
+
+
+                <div class=" d-flex justify-content-around">
+                    <div class="mb-3 me-2 col-6">
+                        <label for="#" class="form-label bg-danger">Nombre</label>
+                        <input type="text" class="form-control is-valid" id="validationServer01" value="Lucas" required>
+                        <div class="invalid-feedback"> Ingrese su Nombre. </div>
+
+                    </div>
+                    <div class="mb-3 ms-2 col-6">
+                        <label for="validationServer02" class="form-label bg-danger">Apellido</label>
+                        <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+                        <div class="invalid-feedback"> Ingrese su Apellido. </div>
+
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="validationServerUsername" class="form-label">Correo Electronico</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                        <input  type="text"  class="form-control is-invalid" id="validationServerUsername"
+                            placeholder="miemail@gmail.com"
+                            aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                        <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="mb-3 text-center ">
+                    <label for="validationTextarea" class="p-1 m-2 form-label bg-danger">Nos gustaria recibir un mensaje
+                        del donador</label>
+                    <textarea class="form-control" id="validationTextarea"
+                        placeholder="Hago esta donaci&oacute;n porqu&eacute;..." required></textarea>
+                </div>
+                </div>
+
+                <div class="mb-3">
+                    <select class="form-select" required aria-label="select example">
+                        <option value="">Me gustaria colaborar con...</option>
+                        <option value="1">100 $ARS</option>
+                        <option value="2">500 $ARS</option>
+                        <option value="3">1000 $ARS</option>
+                    </select>
+                    <div class="invalid-feedback">Elejir alguna opci&oacute;n</div>
+                </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">$ARS</span>
+                        <span class="input-group-text">0.00</span>
+                        <input type="text" class="form-control" aria-label="ARS amount (with dot and two decimal places)">
+
+                    </div>
+                  
+
+                <div class="mb-3">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+            </form>
+
         </section>
 
-        <br />
 
-        <section class="mainindex">
-            <h2 class="text-center">Nuestros valores</h2>
-            <div class="d-flex flex-row flex-md-row flex-wrap justify-content-center m-5">
-                <div class="bg-primary-subtle p-1 rounded m-3 col-12 col-md-6 col-lg-4">
-                    <h5 class="bg-success rounded-top text-white text-center p-1">
-                        Educaci&oacute;n
-                    </h5>
-                    <p class="text-center">
-                        Es la herramienta que permite a las personas, alcanzar su
-                        m&aacute;ximo potencial.
-                    </p>
-                </div>
-                <div class="bg-primary-subtle p-1 rounded m-3 col-12 col-md-6 col-lg-4">
-                    <h5 class="bg-success rounded text-white text-center p-1">
-                        Excelencia
-                    </h5>
-                    <p class="text-center">
-                        Emprendemos nuestros proyectos con este principio como base,
-                        ofreciendo actividades de calidad. Ellos merecen más que algo
-                        bueno, merecen lo mejor.
-                    </p>
-                </div>
 
-                <div class="bg-primary-subtle p-1 rounded m-3 col-12 col-md-6 col-lg-4">
-                    <h5 class="bg-success rounded-top text-white text-center p-1">
-                        Transparencia
-                    </h5>
-                    <p class="text-center">
-                        Ponemos a disposición de nuestros colaboradores toda la
-                        información necesaria sobre los recursos utilizados en nuestros
-                        proyectos.
-                    </p>
-                </div>
-
-                <div class="bg-primary-subtle p-1 rounded m-3 col-12 col-md-6 col-lg-4">
-                    <h5 class="bg-success rounded-top text-white text-center p-1">
-                        Empat&iacute;a
-                    </h5>
-                    <p class="text-center">
-                        Cada persona es única y merece la mirada apreciativa que los hace
-                        dignos como seres humanos. Nuestro equipo interdisciplinario
-                        atiende las necesidades, tanto emocionales, físicas, cognitivas.
-                    </p>
-                </div>
-
-                <div class="bg-primary-subtle p-1 rounded m-3 col-12 col-md-6 col-lg-4">
-                    <h5 class="bg-success rounded-top text-white text-center p-1">
-                        Equidad
-                    </h5>
-                    <p class="text-center">
-                        Todos tienen el derecho de que se les garanticen los accesos para
-                        satisfacer sus necesidades básicas.
-                    </p>
-                </div>
-
-                <div class="bg-primary-subtle p-1 rounded m-3 col-12 col-md-6 col-lg-4">
-                    <h5 class="bg-success rounded-top text-white text-center p-1">
-                        Profesionalismo
-                    </h5>
-                    <p class="text-center">
-                        Contamos con un equipo de trabajo interdisciplinario que aborda
-                        todas las problemáticas desde diferentes enfoques para cumplir con
-                        nuestra misión.
-                    </p>
-                </div>
-
-                <div class="bg-primary-subtle p-1 rounded m-3 col-12 col-md-6 col-lg-4">
-                    <h5 class="bg-success rounded-top text-white text-center p-1">
-                        Desarrollo integral
-                    </h5>
-                    <p class="text-center">
-                        Trabajamos para promover y proveer las oportunidades necesarias
-                        para garantizar el crecimiento, el conocimiento y el compañerismo
-                        de todos.
-                    </p>
-                </div>
-            </div>
+        <section class="d-flex col-6 rounded justify-content-center mt-2 pt-2 bg-danger">
+            <img class="col-11" height="200px" src="data:image/png;base64,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">
         </section>
     </main>
 

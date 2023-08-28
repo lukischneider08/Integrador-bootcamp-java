@@ -7,7 +7,7 @@
     <title>Inscripciones</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../css/proyecto.style.css" />
+    <link rel="stylesheet" href="../css/inscripciones.style.css" />
     <link rel="stylesheet" href="../css/global.style.css">
 </head>
 
@@ -16,7 +16,8 @@
         <nav class="navbar navbar-expand-lg text-primary-emphasis bg-danger">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html ">
-                    <img src="../assets/logo.jpg" width="80" height="80" class="m-2 rounded-circle border border-white" />
+                    <img src="../assets/logo.jpg" width="80" height="80"
+                        class="m-2 rounded-circle border border-white" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,95 +56,96 @@
     </header>
 
     <main class="p-2 colormain">
-        <section class="cont">
-            <div class="centered">
-                <h2>Nuestra Misi&oacute;n</h2>
-                <p class="text-primary-emphasis bg-primary-subtle p-2 rounded">
-                    promover el desarrollo integral de los niños, niñas y adolescentes a
-                    trav&eacute;s de la educaci&oacute;n donde trabajamos.
-                </p>
+
+        <section class="d-flex flex-md-row flex-column ">
+
+            <div class="d-flex flex-md-row flex-column align-items-center ms-md-5">
+
+                <div class="card m-3" style="width: 18rem;">
+                    <img src="../assets/ong.png"
+                        class="card-img-top" height="250">
+                    <div class="card-body">
+                        <h5 class="card-title">Fundaci&oacute;n Regalos</h5>
+                        <p class="card-text">
+                            Tu ayuda de verdad hace la diferencia.
+                            Todas las donaciones a la ONG cuentan. Contigo podemos continuar con programas de lucha contra el hambre y la desnutrición
+
+                        </p>
+                    </div>
+                   
+                    <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 18rem;">
+                    <img src="https://static.wixstatic.com/media/190592_d9f7252f9c5e49679677208d0be5e1bd~mv2.png/v1/fill/w_429,h_572,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/IMG_7385_heic.png"
+                        class="card-img-top" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Fundaci&oacute;n Regalos</h5>
+                        <p class="card-text">Requisitos para realizar la inscripci&oacute;n</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Tener entre 5 y 11 años</li>
+                        <li class="list-group-item">Tener acompañamiento de la familia durante ciclo lectivo</li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div class=" m-auto  col-5 col-md-5 bg-danger rounded mt-3 p-1">
+
+                <h5 class="text-center text-white">Para comenzar con la inscripcion debera completar el formulario:</h5>
+                <form class=" row p-2 g-3 justify-content-center rounded">
+                    <div class=" col-md-4 bg-primary-subtle m-1 rounded">
+                        <label for="validationDefault01" class="form-label">Nombre y Apellido</label>
+                        <input type="text" class="form-control" id="validationDefault01" value="Lucas" required>
+                    </div>
+                    <div class="col-md-3 bg-primary-subtle m-1 rounded">
+                        <label for="validationDefault02" class="form-label">Nombre de alumno</label>
+                        <input type="text" class="form-control" id="validationDefault02" value="Schneider" required>
+                    </div>
+                    <div class="col-md-4 bg-primary-subtle m-1 rounded">
+                        <label for="validationDefaultUsername" class="form-label">Correo electronico</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                            <input type="text" class="form-control" id="validationDefaultUsername"
+                                aria-describedby="inputGroupPrepend2" required>
+                        </div>
+                    </div>
+
+
+                    <div class="mb-3 col-md-5 bg-primary-subtle m-1 p-1 rounded">
+                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+
+
+                    <div class="col-md-2 bg-primary-subtle m-1 rounded">
+                        <label for="validationDefault04" class="form-label">Turno</label>
+                        <select class="form-select" id="validationDefault04" required>
+                            <option selected disabled value="">Turno</option>
+                            <option>Mañana</option>
+                            <option>Tarde</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-4 bg-primary-subtle m-1 rounded">
+                        <label for="validationDefault05" class="form-label">Número de telefono</label>
+                        <input type="number" placeholder=" Ejemplo: +54 11 9856-5426" class="form-control"
+                            id="validationDefault05" required>
+                    </div>
+
+                    <div class="m-2 ">
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+                    </div>
+                </form>
+
+
             </div>
         </section>
-
-        <br />
-
-        <section class="mainindex">
-            <h2 class="text-center">Nuestros valores</h2>
-            <div class="d-flex flex-row flex-md-row flex-wrap justify-content-center m-5">
-                <div class="bg-primary-subtle p-1 rounded m-3 col-12 col-md-6 col-lg-4">
-                    <h5 class="bg-success rounded-top text-white text-center p-1">
-                        Educaci&oacute;n
-                    </h5>
-                    <p class="text-center">
-                        Es la herramienta que permite a las personas, alcanzar su
-                        m&aacute;ximo potencial.
-                    </p>
-                </div>
-                <div class="bg-primary-subtle p-1 rounded m-3 col-12 col-md-6 col-lg-4">
-                    <h5 class="bg-success rounded text-white text-center p-1">
-                        Excelencia
-                    </h5>
-                    <p class="text-center">
-                        Emprendemos nuestros proyectos con este principio como base,
-                        ofreciendo actividades de calidad. Ellos merecen más que algo
-                        bueno, merecen lo mejor.
-                    </p>
-                </div>
-
-                <div class="bg-primary-subtle p-1 rounded m-3 col-12 col-md-6 col-lg-4">
-                    <h5 class="bg-success rounded-top text-white text-center p-1">
-                        Transparencia
-                    </h5>
-                    <p class="text-center">
-                        Ponemos a disposición de nuestros colaboradores toda la
-                        información necesaria sobre los recursos utilizados en nuestros
-                        proyectos.
-                    </p>
-                </div>
-
-                <div class="bg-primary-subtle p-1 rounded m-3 col-12 col-md-6 col-lg-4">
-                    <h5 class="bg-success rounded-top text-white text-center p-1">
-                        Empat&iacute;a
-                    </h5>
-                    <p class="text-center">
-                        Cada persona es única y merece la mirada apreciativa que los hace
-                        dignos como seres humanos. Nuestro equipo interdisciplinario
-                        atiende las necesidades, tanto emocionales, físicas, cognitivas.
-                    </p>
-                </div>
-
-                <div class="bg-primary-subtle p-1 rounded m-3 col-12 col-md-6 col-lg-4">
-                    <h5 class="bg-success rounded-top text-white text-center p-1">
-                        Equidad
-                    </h5>
-                    <p class="text-center">
-                        Todos tienen el derecho de que se les garanticen los accesos para
-                        satisfacer sus necesidades básicas.
-                    </p>
-                </div>
-
-                <div class="bg-primary-subtle p-1 rounded m-3 col-12 col-md-6 col-lg-4">
-                    <h5 class="bg-success rounded-top text-white text-center p-1">
-                        Profesionalismo
-                    </h5>
-                    <p class="text-center">
-                        Contamos con un equipo de trabajo interdisciplinario que aborda
-                        todas las problemáticas desde diferentes enfoques para cumplir con
-                        nuestra misión.
-                    </p>
-                </div>
-
-                <div class="bg-primary-subtle p-1 rounded m-3 col-12 col-md-6 col-lg-4">
-                    <h5 class="bg-success rounded-top text-white text-center p-1">
-                        Desarrollo integral
-                    </h5>
-                    <p class="text-center">
-                        Trabajamos para promover y proveer las oportunidades necesarias
-                        para garantizar el crecimiento, el conocimiento y el compañerismo
-                        de todos.
-                    </p>
-                </div>
-            </div>
         </section>
     </main>
 
