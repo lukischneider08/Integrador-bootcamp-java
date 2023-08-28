@@ -1,19 +1,33 @@
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(() => {
-  'use strict'
+const nombre = document.getElementById("name")
+const email = document.getElementById("email")
+const form = document.getElementById("form")
+const parrafo = document.getElementById("warnings")
+const numero = document.getElementById("numero")
 
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  const forms = document.querySelectorAll('.needs-validation')
+form.addEventListener("submit", e=>{
+    e.preventDefault()
+    let warnings = ""
+    let entrar = false
+    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
+    parrafo.innerHTML = ""
+    if(nombre.value.length <6){
+        warnings += `El nombre no es valido <br>`
+        entrar = true
+    }
+    if(!regexEmail.test(email.value)){
+        warnings += `El email no es valido <br>`
+        entrar = true
+    }
 
-  // Loop over them and prevent submission
-  Array.from(forms).forEach(form => {
-    form.addEventListener('submit', event => {
-      if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-      }
+    if(numero.value.length <8){
+        warnings += `El numero no es valido <br>`
+        entrar = true
+    }
 
-      form.classList.add('was-validated')
-    }, false)
-  })
-})()
+    if(entrar){
+        parrafo.innerHTML = warnings
+    }else{
+        parrafo.innerHTML = "Enviado"
+        alert('Formulario Enviado')
+    }
+})

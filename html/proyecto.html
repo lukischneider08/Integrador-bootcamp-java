@@ -162,15 +162,14 @@
       </section>
     </main>
 
-    <footer>
+    
+    <footer >
       <section
         class="d-flex flex-column flex-md-row align-items-center justify-content-around colorfooter p-3"
       >
-        <section
-          class="bg-primary-subtle p-5 shadow rounded col-10 col-md-4 col-lg-3"
-        >
-          <div>
-            <h3 class="">Escr&iacute;benos!</h3>
+        
+        <section class="bg-primary-subtle p-3 shadow rounded col-10 col-md-4 col-lg-3">
+          <div><h3 class="">Escr&iacute;benos!</h3>
             <ul>
               <li>Av. Belisario Roldán 4651</li>
               <li>Provincia de Buenos Aires</li>
@@ -178,13 +177,11 @@
               <li>info@proyectogc.org</li>
             </ul>
 
-            <img src="../assets/logo.jpg" width="80" height="80" class="m-2" />
+            <img src="/assets/logo.jpg" width="80" height="80" class="m-2" />
           </div>
         </section>
 
-        <form
-          class="my-4 p-2 shadow rounded bg-primary-subtle col-11 col-md-6 col-lg-4"
-        >
+        <form class=" p-2 shadow rounded bg-primary-subtle col-11 col-md-6 col-lg-4 needs-validation" id="form">
           <div class="">
             <label for="exampleFormControlInput1" class="form-label"
               >Nombre</label
@@ -192,7 +189,7 @@
             <input
               type="name"
               class="form-control"
-              id="exampleFormControlInput1"
+              id="name"
               placeholder="Nombre"
             />
           </div>
@@ -204,7 +201,7 @@
             <input
               type="email"
               class="form-control"
-              id="exampleFormControlInput1"
+              id="email"
               placeholder="name@example.com"
             />
           </div>
@@ -221,7 +218,9 @@
             <p>Contanos en que podemos ayudarte. 200 caracteres</p>
           </div>
 
-          <button type="submit" class="mt-2 btn btn-primary">Enviar</button>
+          <p class="warnings"  id="warnings"></p>
+
+          <button type="submit" class=" btn btn-primary">Enviar</button>
         </form>
       </section>
     </footer>
@@ -231,6 +230,6 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
-    <script src="../js/index.js"></script>
+    <script src="../js/global.js"></script>
   </body>
 </html>
