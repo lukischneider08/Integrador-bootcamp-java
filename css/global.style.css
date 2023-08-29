@@ -32,12 +32,6 @@ a:hover{
     text-decoration: overline;
 }
 
-
-.corazon:hover{
-    background-color: #5ed395;
-
-}
-
 header{
     font-family: var(--font-primary);
 }
@@ -54,3 +48,5 @@ footer{
 .warnings{
     color: red;
 }
+
+
