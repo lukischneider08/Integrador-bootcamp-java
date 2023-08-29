@@ -9,6 +9,8 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/inscripciones.style.css" />
     <link rel="stylesheet" href="../css/global.style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 
 <body>
@@ -17,7 +19,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html ">
                     <img src="../assets/logo.jpg" width="80" height="80"
-                        class="m-2 rounded-circle border border-white" />
+                        class="m-2 rounded-circle border border-white animate__animated animate__lightSpeedInLeft" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -94,7 +96,7 @@
             </div>
 
 
-            <div class=" m-auto  col-5 col-md-5 bg-danger rounded mt-3 p-1">
+            <div class=" m-auto  col-5 col-md-5 bg-danger rounded mt-3 p-1 animate__animated animate__swing">
 
                 <h5 class="text-center text-white">Para comenzar con la inscripcion debera completar el formulario:</h5>
                 <form class=" row p-2 g-3 justify-content-center rounded " id="form">
@@ -110,8 +112,8 @@
                         <label for="validationDefaultUsername" class="form-label">Correo electronico</label>
                         <div class="input-group">
                             <span class="input-group-text" id="">@</span>
-                            <input type="text" class="form-control" id="email"
-                                aria-describedby="inputGroupPrepend2" required>
+                            <input type="text" class="form-control" id="email" aria-describedby="inputGroupPrepend2"
+                                required>
                         </div>
                     </div>
 
@@ -134,8 +136,8 @@
 
                     <div class="col-md-4 bg-primary-subtle m-1 rounded">
                         <label for="validationDefault05" class="form-label">Número de telefono</label>
-                        <input type="number" placeholder=" Ejemplo: +54 11 9856-5426" class="form-control"
-                            id="numero" required>
+                        <input type="number" placeholder=" Ejemplo: +54 11 9856-5426" class="form-control" id="numero"
+                            required>
                     </div>
 
                     <div class="m-2 ">
@@ -150,73 +152,51 @@
         </section>
     </main>
 
-    
-    <footer >
-        <section
-          class="d-flex flex-column flex-md-row align-items-center justify-content-around colorfooter p-3"
-        >
-          
-          <section class="bg-primary-subtle p-3 shadow rounded col-10 col-md-4 col-lg-3">
-            <div><h3 class="">Escr&iacute;benos!</h3>
-              <ul>
-                <li>Av. Belisario Roldán 4651</li>
-                <li>Provincia de Buenos Aires</li>
-                <li>Tel. (54)5277 0815</li>
-                <li>info@proyectogc.org</li>
-              </ul>
-  
-              <img src="/assets/logo.jpg" width="80" height="80" class="m-2" />
-            </div>
-          </section>
-  
-          <form class=" p-2 shadow rounded bg-primary-subtle col-11 col-md-6 col-lg-4 needs-validation" id="form">
-            <div class="">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Nombre</label
-              >
-              <input
-                type="name"
-                class="form-control"
-                id="name"
-                placeholder="Nombre"
-              />
-            </div>
-  
-            <div class="">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Correo electronico</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="name@example.com"
-              />
-            </div>
-  
-            <div class="">
-              <label for="exampleFormControlTextarea1" class="form-label"
-                >Mensaje</label
-              >
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="3"
-              ></textarea>
-              <p>Contanos en que podemos ayudarte. 200 caracteres</p>
-            </div>
-  
-            <p class="warnings"  id="warnings"></p>
-  
-            <button type="submit" class=" btn btn-primary">Enviar</button>
-          </form>
+
+    <footer>
+        <section class="d-flex flex-column flex-md-row align-items-center justify-content-around colorfooter p-3">
+
+            <section class="bg-primary-subtle p-3 shadow rounded col-10 col-md-4 col-lg-3">
+                <div>
+                    <h3>Escr&iacute;benos!</h3>
+                    <ul>
+                        <li>Av. Belisario Roldán 4651</li>
+                        <li>Provincia de Buenos Aires</li>
+                        <li>Tel. (54)5277 0815</li>
+                        <li>info@proyectogc.org</li>
+                    </ul>
+
+                    <img src="/assets/logo.jpg" width="80" height="80" class="m-2" />
+                </div>
+            </section>
+
+            <form class=" p-2 shadow rounded bg-primary-subtle col-11 col-md-6 col-lg-4 needs-validation" id="form">
+                <div class="">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                    <input type="name" class="form-control" id="name" placeholder="Nombre" />
+                </div>
+
+                <div class="">
+                    <label for="exampleFormControlInput1" class="form-label">Correo electronico</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" />
+                </div>
+
+                <div class="">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <p>Contanos en que podemos ayudarte. 200 caracteres</p>
+                </div>
+
+                <p class="warnings" id="warnings"></p>
+
+                <button type="submit" class=" btn btn-primary">Enviar</button>
+            </form>
         </section>
-      </footer>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+        </script>
 
     <script src="../js/global.js"></script>
 
